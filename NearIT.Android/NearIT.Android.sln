@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NearIT.Android", "NearIT.Android\NearIT.Android.csproj", "{AC12A43D-671D-4B87-BBAD-5F0FB840A54D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC12A43D-671D-4B87-BBAD-5F0FB840A54D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC12A43D-671D-4B87-BBAD-5F0FB840A54D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC12A43D-671D-4B87-BBAD-5F0FB840A54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC12A43D-671D-4B87-BBAD-5F0FB840A54D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

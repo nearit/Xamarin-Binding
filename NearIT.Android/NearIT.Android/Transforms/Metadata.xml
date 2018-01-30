@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    
+    <remove-node path="/api/package[@name='it.near.sdk.operation']/interface[@name='NearItUserDataAPI.UserDataSendListener']" />
+    <remove-node path="/api/package[@name='it.near.sdk.geopolis.radar.neighbors']/interface[@name='ResolverApi.NeighborSearchListener']" />
+    <remove-node path="/api/package[@name='it.near.sdk.geopolis.radar']/interface[@name='TreeChangeCalculator.TreeChangeListener']" />
+
+    <add-node path="/api/package[@name='it.near.sdk.geopolis.radar.events']">
+        <class abstract="true" deprecated="not deprecated" name="GeopolisEvent">
+        </class>
+    </add-node>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+</metadata>
