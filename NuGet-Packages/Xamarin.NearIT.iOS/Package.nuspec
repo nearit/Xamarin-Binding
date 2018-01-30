@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Xamarin.NearIT.iOS</id>
+    <version>2.5.6</version>
+    <authors>NearIT</authors>
+    <owners>NearIT</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NearIT iOS NuGet</description>
+    <releaseNotes>iOS SDK 2.5.6</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>engagement beacon proximity marketing</tags>
+    <references>
+      <reference file="NearIT.iOS.dll" />
+      <reference file="XamarinBridge.iOS.dll" />
+      <reference file="XamarinBridge.PCL.dll" />
+    </references>
+  </metadata>
+  <files>
+     <file src="lib/NearIT.iOS.dll" target="lib/NearITSDK" />
+     <file src="lib/XamarinBridge.iOS.dll" target="lib/NearITSDK" />
+     <file src="lib/XamarinBridge.PCL.dll" target="lib/NearITSDK" />
+  </files>
+</package>
+
+
