@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NearIT.iOS", "NearIT.iOS\NearIT.iOS.csproj", "{AA5E7502-5FEF-4C6A-9FC1-3941C3BE2A1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA5E7502-5FEF-4C6A-9FC1-3941C3BE2A1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA5E7502-5FEF-4C6A-9FC1-3941C3BE2A1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA5E7502-5FEF-4C6A-9FC1-3941C3BE2A1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA5E7502-5FEF-4C6A-9FC1-3941C3BE2A1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
