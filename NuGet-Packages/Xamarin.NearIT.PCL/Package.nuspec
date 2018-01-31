@@ -12,9 +12,11 @@
     <tags>engagement beacon proximity marketing</tags>
     <references>
       <reference file="XamarinBridge.PCL.dll" />
+      <reference file="XamarinUI.dll" />
     </references>
   </metadata>
   <files>
      <file src="lib/XamarinBridge.PCL.dll" target="lib/NearITSDK" />
+     <file src="lib/XamarinUI.dll" target="lib/NearITSDK" />
   </files>
 </package>

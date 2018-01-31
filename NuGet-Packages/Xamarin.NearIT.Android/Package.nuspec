@@ -21,6 +21,8 @@
       <reference file="NearIT.Android.dll" />
       <reference file="XamarinBridge.Droid.dll" />
       <reference file="XamarinBridge.PCL.dll" />
+      <reference file="NearIT.Android.UI.dll" />
+      <reference file="XamarinUI.Droid.dll" />
     </references>
   </metadata>
   <files>
@@ -29,5 +31,7 @@
      <file src="lib/NearIT.Android.dll" target="lib/NearITSDK" />
      <file src="lib/XamarinBridge.Droid.dll" target="lib/NearITSDK" />
      <file src="lib/XamarinBridge.PCL.dll" target="lib/NearITSDK" />
+     <file src="lib/NearIT.Android.UI.dll" target="lib/NearITSDK" />
+     <file src="lib/XamarinUI.Droid.dll" target="lib/NearITSDK" />
   </files>
 </package>
