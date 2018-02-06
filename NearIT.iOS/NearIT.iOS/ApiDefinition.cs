@@ -498,6 +498,7 @@ namespace NearIT
     }
 
     // @protocol NITPermissionsViewControllerDelegate
+    [BaseType(typeof(NSObject))]
     [Protocol, Model]
     interface NITPermissionsViewControllerDelegate
     {
