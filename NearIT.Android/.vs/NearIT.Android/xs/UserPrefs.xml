@@ -1,16 +1,18 @@
-﻿<Properties StartupConfiguration="{AC12A43D-671D-4B87-BBAD-5F0FB840A54D}|Default">
+﻿<Properties StartupConfiguration="{AC12A43D-671D-4B87-BBAD-5F0FB840A54D}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.Workbench ActiveDocument="NearIT.Android/Transforms/Metadata.xml">
     <Files>
-      <File FileName="NearIT.Android/Transforms/Metadata.xml" Line="1" Column="1" />
+      <File FileName="NearIT.Android/Transforms/Metadata.xml" Line="9" Column="45" />
+      <File FileName="NearIT.Android/Transforms/EnumMethods.xml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NearIT.Android" expanded="True">
-            <Node name="NearIT.Android" expanded="True" selected="True">
-              <Node name="References" expanded="True" />
-              <Node name="Packages" expanded="True" />
-              <Node name="Transforms" expanded="True" />
+            <Node name="NearIT.Android" expanded="True">
+              <Node name="Jars" expanded="True" />
+              <Node name="Transforms" expanded="True">
+                <Node name="Metadata.xml" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -22,6 +24,6 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.NearIT.Android PreferredExecutionTarget="Android.B2NGAA9832703731" />
+  <MonoDevelop.Ide.ItemProperties.NearIT.Android PreferredExecutionTarget="Android.Nexus_5_API_19" />
   <MultiItemStartupConfigurations />
 </Properties>
