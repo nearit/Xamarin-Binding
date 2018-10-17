@@ -84,6 +84,9 @@
     <Reference Include="Xamarin.Android.Support.v7.AppCompat">
       <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.27.0.2.1\lib\MonoAndroid81\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
     </Reference>
+    <Reference Include="GoogleGson">
+      <HintPath>..\packages\GoogleGson.2.8.1\lib\MonoAndroid\GoogleGson.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -105,9 +108,6 @@
   <ItemGroup>
     <EmbeddedReferenceJar Include="Jars\android-async-http-1.4.9.jar" />
     <EmbeddedReferenceJar Include="Jars\httpclient-4.3.6.jar" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedJar Include="Jars\gson-2.8.5.jar" />
   </ItemGroup>
   <ItemGroup>
     <LibraryProjectZip Include="Jars\nearit-xamarinRelease.aar" />
