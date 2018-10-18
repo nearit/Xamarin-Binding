@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{AC12A43D-671D-4B87-BBAD-5F0FB840A54D}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="NearIT.Android/Additions/CustomJSONReaction.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NearIT.Android/Transforms/Metadata.xml">
     <Files>
-      <File FileName="NearIT.Android/Transforms/Metadata.xml" Line="4" Column="118" />
+      <File FileName="NearIT.Android/Transforms/Metadata.xml" Line="9" Column="39" />
       <File FileName="NearIT.Android/Transforms/EnumMethods.xml" Line="1" Column="1" />
       <File FileName="NearIT.Android/Transforms/EnumFields.xml" Line="1" Column="1" />
       <File FileName="NearIT.Android/Additions/CustomJSONReaction.cs" Line="4" Column="26" />
@@ -12,12 +12,12 @@
           <Node name="NearIT.Android" expanded="True">
             <Node name="NearIT.Android" expanded="True">
               <Node name="References" expanded="True" />
-              <Node name="Additions" expanded="True">
-                <Node name="CustomJSONReaction.cs" selected="True" />
-              </Node>
+              <Node name="Additions" expanded="True" />
               <Node name="Jars" expanded="True" />
               <Node name="Properties" expanded="True" />
-              <Node name="Transforms" expanded="True" />
+              <Node name="Transforms" expanded="True">
+                <Node name="Metadata.xml" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
