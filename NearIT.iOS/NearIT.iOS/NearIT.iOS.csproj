@@ -41,11 +41,11 @@
     <ObjcBindingCoreSource Include="Structs.cs" />
   </ItemGroup>
   <ItemGroup>
-    <NativeReference Include="..\NearITSDK.framework">
+    <NativeReference Include="..\NearUIBinding.framework">
       <Kind>Framework</Kind>
       <SmartLink>False</SmartLink>
     </NativeReference>
-    <NativeReference Include="..\NearUIBinding.framework">
+    <NativeReference Include="..\..\..\github-ios-sdk\NearITSDK.framework">
       <Kind>Framework</Kind>
       <SmartLink>False</SmartLink>
     </NativeReference>

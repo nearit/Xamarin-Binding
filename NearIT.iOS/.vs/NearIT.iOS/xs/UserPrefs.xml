@@ -1,24 +1,27 @@
-﻿<Properties>
-  <MonoDevelop.Ide.Workbench ActiveDocument="NearIT.iOS/Structs.cs">
+﻿<Properties StartupConfiguration="{A3AAA605-0A61-4651-9FFB-07C8B2AE1127}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="iOSSample/AppDelegate.cs">
     <Files>
-      <File FileName="NearIT.iOS/ApiDefinition.cs" Line="1" Column="1" />
-      <File FileName="NearIT.iOS/Structs.cs" Line="1" Column="1" />
+      <File FileName="NearIT.iOS/ApiDefinition.cs" Line="20" Column="32" />
+      <File FileName="NearIT.iOS/Structs.cs" Line="10" Column="45" />
+      <File FileName="iOSSample/AppDelegate.cs" Line="16" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NearIT.iOS" expanded="True">
-            <Node name="NearIT.iOS" expanded="True">
-              <Node name="NativeReferenceFolder" expanded="True" />
-              <Node name="Properties" expanded="True" />
-              <Node name="Structs.cs" selected="True" />
+            <Node name="iOSSample" expanded="True" selected="True">
+              <Node name="References" expanded="True" />
             </Node>
+            <Node name="NearIT.iOS" expanded="True" />
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.iOSSample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.12A577A1-7D31-4226-A44E-06B2E9ED542C" FirstBuild="True">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.iOSSample>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
