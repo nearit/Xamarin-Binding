@@ -1,5 +1,5 @@
 ﻿using System;
-
+using NearIT;
 using UIKit;
 
 namespace iOSSample
@@ -14,6 +14,7 @@ namespace iOSSample
         public override void ViewDidLoad()
         {
             base.ViewDidLoad();
+            NITManager.DefaultManager.Start();
             // Perform any additional setup after loading the view, typically from a nib.
         }
 

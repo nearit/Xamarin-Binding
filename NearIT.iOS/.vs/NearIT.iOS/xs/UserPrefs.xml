@@ -1,29 +1,40 @@
 ﻿<Properties StartupConfiguration="{A3AAA605-0A61-4651-9FFB-07C8B2AE1127}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="iOSSample/AppDelegate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NearIT.iOS/ApiDefinition.cs">
     <Files>
-      <File FileName="NearIT.iOS/ApiDefinition.cs" Line="20" Column="32" />
-      <File FileName="NearIT.iOS/Structs.cs" Line="10" Column="45" />
-      <File FileName="iOSSample/AppDelegate.cs" Line="16" Column="17" />
+      <File FileName="NearIT.iOS/ApiDefinition.cs" Line="1198" Column="37" />
+      <File FileName="iOSSample/AppDelegate.cs" Line="27" Column="1" />
+      <File FileName="../../../../../Library/Frameworks/Xamarin.iOS.framework/Versions/12.0.0.15/lib/msbuild/iOS/Xamarin.iOS.ObjCBinding.CSharp.targets" Line="60" Column="3" />
+      <File FileName="NearIT.iOS/Structs.cs" Line="91" Column="5" />
+      <File FileName="iOSSample/LaunchScreen.storyboard" />
+      <File FileName="iOSSample/Main.cs" Line="13" Column="59" />
+      <File FileName="iOSSample/Main.storyboard" />
+      <File FileName="iOSSample/ViewController.cs" Line="20" Column="9" />
+      <File FileName="NearIT.iOS/obj/Debug/ios/NearIT/NITManager.g.cs" Line="512" Column="1" />
+      <File FileName="iOSSample/ViewController.designer.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NearIT.iOS" expanded="True">
-            <Node name="iOSSample" expanded="True" selected="True">
-              <Node name="References" expanded="True" />
+            <Node name="Solution Items" expanded="True" />
+            <Node name="iOSSample" expanded="True">
+              <Node name="ViewController.cs" expanded="True" />
             </Node>
-            <Node name="NearIT.iOS" expanded="True" />
+            <Node name="NearIT.iOS" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="ApiDefinition.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.iOSSample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.12A577A1-7D31-4226-A44E-06B2E9ED542C" FirstBuild="True">
-    <MonoDevelop.MacDev.AppleDevelopmentTeam />
-  </MonoDevelop.Ide.ItemProperties.iOSSample>
+  <MonoDevelop.Ide.ItemProperties.iOSSample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.12A577A1-7D31-4226-A44E-06B2E9ED542C" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/cattaneostefano/development/Xamarin-Binding/NearIT.iOS/iOSSample/ViewController.cs" relfile="iOSSample/ViewController.cs" line="17" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />

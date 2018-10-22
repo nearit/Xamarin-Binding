@@ -1,4 +1,5 @@
-﻿using UIKit;
+﻿using NearIT;
+using UIKit;
 
 namespace iOSSample
 {
