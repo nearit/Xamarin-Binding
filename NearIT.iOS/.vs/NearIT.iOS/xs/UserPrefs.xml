@@ -1,21 +1,24 @@
 ﻿<Properties StartupConfiguration="{A3AAA605-0A61-4651-9FFB-07C8B2AE1127}|Default">
   <MonoDevelop.Ide.ItemProperties.BindSample PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.86E259FA-1C94-4F10-957E-5DE5DEC91DC5" automaticSigning="False" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="NearIT.iOS/obj/Debug/ios/ObjCRuntime/Trampolines.g.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="README.md">
     <Files>
       <File FileName="iOSSample/Main.cs" Line="1" Column="1" />
-      <File FileName="iOSSample/AppDelegate.cs" Line="83" Column="8" />
+      <File FileName="iOSSample/AppDelegate.cs" Line="119" Column="1" />
       <File FileName="NearIT.iOS/obj/Debug/ios/NearIT/NITManager.g.cs" Line="586" Column="1" />
-      <File FileName="iOSSample/ViewController.cs" Line="23" Column="1" />
+      <File FileName="iOSSample/ViewController.cs" Line="39" Column="1" />
       <File FileName="iOSSample/LaunchScreen.storyboard" />
       <File FileName="NearIT.iOS/obj/Debug/ios/ObjCRuntime/Trampolines.g.cs" Line="437" Column="1" />
+      <File FileName="README.md" Line="3" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NearIT.iOS" expanded="True">
+            <Node name="Solution Items" expanded="True">
+              <Node name="/Users/cattaneostefano/development/Xamarin-Binding/NearIT.iOS/README.md" selected="True" />
+            </Node>
             <Node name="iOSSample" expanded="True">
               <Node name="References" expanded="True" />
-              <Node name="ViewController.cs" selected="True" />
             </Node>
             <Node name="NearIT.iOS" expanded="True">
               <Node name="References" expanded="True" />
@@ -43,8 +46,6 @@
       <Breakpoint file="/Users/cattaneostefano/development/Xamarin-Binding/NearIT.iOS/Sample/AppDelegate.cs" relfile="Sample/AppDelegate.cs" line="24" column="24" />
       <Breakpoint file="/Users/cattaneostefano/development/Xamarin-Binding/NearIT.iOS/BindSample/AppDelegate.cs" relfile="BindSample/AppDelegate.cs" line="27" column="1" />
       <Breakpoint file="/Users/cattaneostefano/development/Xamarin-Binding/NearIT.iOS/iOSSample/AppDelegate.cs" relfile="iOSSample/AppDelegate.cs" line="119" column="1" />
-      <Breakpoint file="/Users/cattaneostefano/development/Xamarin-Binding/NearIT.iOS/iOSSample/ViewController.cs" relfile="iOSSample/ViewController.cs" line="21" column="43" />
-      <Breakpoint file="/Users/cattaneostefano/development/Xamarin-Binding/NearIT.iOS/iOSSample/ViewController.cs" relfile="iOSSample/ViewController.cs" line="20" column="31" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
