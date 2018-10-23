@@ -86,8 +86,8 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Xamarin.iOS" />
-    <Reference Include="NearIT.iOS">
-      <HintPath>..\NearIT.iOS\bin\Debug\NearIT.iOS.dll</HintPath>
+    <Reference Include="NearIT.iOS.2.10">
+      <HintPath>..\NearIT.iOS\bin\Debug\NearIT.iOS.2.10.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
