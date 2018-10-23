@@ -19,3 +19,5 @@ packages/
 Keys.plist
 *secrets.xml
 *Keys.plist
+
+NearIT\.iOS/\.vs/NearIT\.iOS/xs/UserPrefs\.xml
