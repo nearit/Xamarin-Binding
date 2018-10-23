@@ -16,6 +16,17 @@ namespace iOSSample
             base.ViewDidLoad();
             NITManager.DefaultManager.Start();
             // Perform any additional setup after loading the view, typically from a nib.
+            NITManager.DefaultManager.HistoryWithCompletion((arg1, arg2) => {
+                foreach (NITHistoryItem item in arg1){
+                    bool read = item.Read;
+                }
+            });
+
+            NITManager.DefaultManager.CouponsWithCompletionHandler((arg1, arg2) => {
+                foreach (NITCoupon coupon in arg1) {
+                    string desc = coupon.Description;
+                }
+            });
         }
 
         public override void DidReceiveMemoryWarning()

@@ -3,6 +3,7 @@ using UIKit;
 using NearIT;
 using UserNotifications;
 using System;
+using CoreLocation;
 
 namespace iOSSample
 {
@@ -24,8 +25,15 @@ namespace iOSSample
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
 
+            string a = "f";
+
             NITManager.SetupWithApiKey("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI5MWMxYzViYzUxODU0ZjE0OGYzYWNiNmQ4YmE4NzU0ZiIsImlhdCI6MTUwNjQxODE2MCwiZXhwIjoxNjMyNzAwNzk5LCJkYXRhIjp7ImFjY291bnQiOnsiaWQiOiIxN2YxMjJiNi1iZjUwLTQ4ZGQtOWZiYi00OTVjMjc4OTZmMzkiLCJyb2xlX2tleSI6ImFwcCJ9fX0.b6AUrbcuwiPJNpY2f7gGH3Qi6s3ZTfCMALqTPwyjJxA");
             NITManager.SetFrameworkName("xamarin");
+            NITManager d = NITManager.DefaultManager;
+
+            CLLocationManager c = new CLLocationManager();
+            c.RequestAlwaysAuthorization();
+            application.RegisterForRemoteNotifications();
 
             UNUserNotificationCenter.Current.RequestAuthorization(UNAuthorizationOptions.Alert, (approved, err) => {
 
@@ -65,6 +73,16 @@ namespace iOSSample
         {
             // Called when the application is about to terminate. Save data, if needed. See also DidEnterBackground.
         }
+
+        public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
+        {
+            return NITManager.DefaultManager.Application(app, url, null);
+        }
+
+        public override void RegisteredForRemoteNotifications(UIApplication application, NSData deviceToken)
+        {
+            NITManager.DefaultManager.SetDeviceTokenWithData(deviceToken);
+        }
     }
 }
 
@@ -82,30 +100,28 @@ public class UserNotificationDelegate : UNUserNotificationCenterDelegate
 
     public override void DidReceiveNotificationResponse(UNUserNotificationCenter center, UNNotificationResponse response, Action completionHandler)
     {
-        // see code below
+        var userInfo = response.Notification.Request.Content.UserInfo;
 
-        //var userInfo = response.Notification.Request.Content.UserInfo;
+        NSString[] keys = new NSString[userInfo.Keys.Length];
+        int i;
+        for (i = 0; i < userInfo.Keys.Length; i++)
+        {
+            if (userInfo.Keys[i] is NSString)
+                keys[i] = userInfo.Keys[i] as NSString;
+            else
+                i = int.MaxValue;
+        }
+        if (i != int.MaxValue)
+        {
+            NSDictionary<NSString, NSObject> notif = new NSDictionary<NSString, NSObject>(keys, userInfo.Values);
+            NITManager.DefaultManager.ProcessRecipeWithUserInfo(notif, (content, trackingInfo, error) =>
+            {
+                if (content != null && content is NITReactionBundle)
+                {
+                    //call the ParseContent to manage your notification
 
-        //NSString[] keys = new NSString[userInfo.Keys.Length];
-        //int i;
-        //for (i = 0; i < userInfo.Keys.Length; i++)
-        //{
-        //    if (userInfo.Keys[i] is NSString)
-        //        keys[i] = userInfo.Keys[i] as NSString;
-        //    else
-        //        i = int.MaxValue;
-        //}
-        //if (i != int.MaxValue)
-        //{
-        //    NSDictionary<NSString, NSObject> notif = new NSDictionary<NSString, NSObject>(keys, userInfo.Values);
-        //    NITManager.DefaultManager.ProcessRecipeWithUserInfo(notif, (content, trackingInfo, error) =>
-        //    {
-        //        if (content != null && content is NITReactionBundle)
-        //        {
-        //            //call the ParseContent to manage your notification
-
-        //        }
-        //    });
-        //}
+                }
+            });
+        }
     }
 }
