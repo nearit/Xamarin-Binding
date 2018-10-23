@@ -3,6 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NearIT.Android", "NearIT.Android\NearIT.Android.csproj", "{AC12A43D-671D-4B87-BBAD-5F0FB840A54D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndroidSample", "AndroidSample\AndroidSample.csproj", "{80C95C50-DB79-45C9-A7D3-872BD7CE4A2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7268C8A7-DD4E-4895-BBFD-7E42DD790ED6}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +20,9 @@ Global
 		{AC12A43D-671D-4B87-BBAD-5F0FB840A54D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC12A43D-671D-4B87-BBAD-5F0FB840A54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC12A43D-671D-4B87-BBAD-5F0FB840A54D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80C95C50-DB79-45C9-A7D3-872BD7CE4A2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80C95C50-DB79-45C9-A7D3-872BD7CE4A2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80C95C50-DB79-45C9-A7D3-872BD7CE4A2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80C95C50-DB79-45C9-A7D3-872BD7CE4A2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>NearIT.Android</RootNamespace>
     <AssemblyName>NearIT.Android</AssemblyName>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
@@ -42,9 +42,6 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="AltBeacon.Droid">
-      <HintPath>..\AltBeacon.Droid.dll</HintPath>
-    </Reference>
     <Reference Include="GoogleServices">
       <HintPath>..\GoogleServices.dll</HintPath>
     </Reference>
@@ -84,6 +81,9 @@
     <Reference Include="Xamarin.Android.Support.v7.AppCompat">
       <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.26.1.0.1\lib\MonoAndroid80\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
     </Reference>
+    <Reference Include="AltBeaconBinding">
+      <HintPath>..\..\..\AltBeaconBinding\AltBeaconBinding\bin\Debug\AltBeaconBinding.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -103,12 +103,12 @@
     <TransformFile Include="Transforms\Metadata.xml" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\nearit-xamarinRelease.aar" />
+    <EmbeddedReferenceJar Include="Jars\android-async-http-1.4.9.jar" />
+    <EmbeddedReferenceJar Include="Jars\httpclient-4.3.6.jar" />
+    <EmbeddedReferenceJar Include="Jars\gson-2.8.0.jar" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedReferenceJar Include="Jars\android-async-http-1.4.9.jar" />
-    <EmbeddedReferenceJar Include="Jars\gson-2.8.0.jar" />
-    <EmbeddedReferenceJar Include="Jars\httpclient-4.3.6.jar" />
+    <LibraryProjectZip Include="Jars\nearit-xamarinRelease.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Annotations.26.1.0.1\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Annotations.26.1.0.1\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets')" />

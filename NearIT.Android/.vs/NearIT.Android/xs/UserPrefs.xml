@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{80C95C50-DB79-45C9-A7D3-872BD7CE4A2C}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AndroidSample/Properties/AndroidManifest.xml">
+    <Files>
+      <File FileName="AndroidSample/MainActivity.cs" Line="25" Column="13" />
+      <File FileName="AndroidSample/Properties/AndroidManifest.xml" Line="15" Column="20" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NearIT.Android" expanded="True">
+            <Node name="Solution Items" expanded="True" />
+            <Node name="AndroidSample" expanded="True">
+              <Node name="Properties" expanded="True">
+                <Node name="AndroidManifest.xml" selected="True" />
+              </Node>
+            </Node>
+            <Node name="NearIT.Android" expanded="True">
+              <Node name="Additions" expanded="True" />
+              <Node name="Transforms" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.NearIT.Android PreferredExecutionTarget="Android.B2NGAA9832703731" />
+  <MonoDevelop.Ide.ItemProperties.AndroidSample PreferredExecutionTarget="Android.B2NGAA9832703731" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.NearBindingSample PreferredExecutionTarget="Android.Nexus_5_API_19" />
+</Properties>

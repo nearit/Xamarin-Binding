@@ -15,7 +15,10 @@
 - (void)setRecipeId:(NSString * _Nonnull)recipeId;
 - (NSDictionary* _Nonnull)extrasDictionary;
 - (BOOL)existsExtraForKey:(NSString* _Nonnull)key;
+- (BOOL)hasDeliveryID;
+- (NSString* _Nullable)deliveryID;
 
 + (NITTrackingInfo* _Nonnull)trackingInfoFromRecipeId:(NSString* _Nonnull)recipeId;
++ (NITTrackingInfo* _Nonnull)trackingInfoFromRecipeId:(NSString* _Nonnull)recipeId extras:(NSDictionary<NSString*, id> *)extras;
 
 @end
