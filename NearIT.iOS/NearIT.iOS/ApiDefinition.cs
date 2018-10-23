@@ -6,9 +6,8 @@ using ObjCRuntime;
 using UIKit;
 using UserNotifications;
 
-namespace NearIT {
-
-
+namespace NearIT
+{
     // @interface NITResource : NSObject <NSCoding>
     [BaseType(typeof(NSObject))]
     interface NITResource : INSCoding
@@ -19,11 +18,13 @@ namespace NearIT {
 
         // -(NSDictionary * _Nonnull)attributesMap;
         [Export("attributesMap")]
+        //[Verify(MethodToProperty)]
         NSDictionary AttributesMap { get; }
 
         // -(NSString * _Nullable)ID;
         // -(void)setID:(NSString * _Nonnull)ID;
         [NullAllowed, Export("ID")]
+        //[Verify(MethodToProperty)]
         string ID { get; set; }
     }
 
@@ -37,11 +38,12 @@ namespace NearIT {
 
         // -(NSURL * _Nullable)url;
         [NullAllowed, Export("url")]
+        //[Verify(MethodToProperty)]
         NSUrl Url { get; }
     }
 
     [Static]
-    // [Verify(ConstantsInterfaceAssociation)]
+    // //[Verify(ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSErrorDomain NITManagerErrorDomain;
@@ -168,22 +170,22 @@ namespace NearIT {
 
         // -(CLRegion * _Nullable)createRegion;
         [NullAllowed, Export("createRegion")]
-        ////[Verify(MethodToProperty)]
+        //[Verify(MethodToProperty)]
         CLRegion CreateRegion { get; }
 
         // -(BOOL)isLeaf;
         [Export("isLeaf")]
-        ////[Verify(MethodToProperty)]
+        //[Verify(MethodToProperty)]
         bool IsLeaf { get; }
 
         // -(NSInteger)parentsCount;
         [Export("parentsCount")]
-        ////[Verify(MethodToProperty)]
+        //[Verify(MethodToProperty)]
         nint ParentsCount { get; }
 
         // -(NSString * _Nonnull)typeName;
         [Export("typeName")]
-        ////[Verify(MethodToProperty)]
+        //[Verify(MethodToProperty)]
         string TypeName { get; }
     }
 
@@ -205,7 +207,7 @@ namespace NearIT {
 
         // -(NITBeaconNodeDepth)depth;
         [Export("depth")]
-        ////[Verify(MethodToProperty)]
+        //[Verify(MethodToProperty)]
         NITBeaconNodeDepth Depth { get; }
     }
 
@@ -235,7 +237,7 @@ namespace NearIT {
 
         // -(NSInteger)regionProximitiesCount;
         [Export("regionProximitiesCount")]
-        ////[Verify(MethodToProperty)]
+        //[Verify(MethodToProperty)]
         nint RegionProximitiesCount { get; }
 
         // -(NSInteger)beaconItemsCountWithRegionIdentifier:(NSString * _Nonnull)identifier;
@@ -358,7 +360,7 @@ namespace NearIT {
 
         // -(void)saveWithArray:(NSArray * _Nonnull)array forKey:(NSString * _Nonnull)key;
         [Export("saveWithArray:forKey:")]
-        // [Verify(StronglyTypedNSArray)]
+        //[[Verify(StronglyTypedNSArray)]
         void SaveWithArray(NSObject[] array, string key);
 
         // -(void)saveWithObject:(id<NSCoding> _Nonnull)object forKey:(NSString * _Nonnull)key;
@@ -367,7 +369,7 @@ namespace NearIT {
 
         // -(NSArray * _Nullable)loadArrayForKey:(NSString * _Nonnull)key;
         [Export("loadArrayForKey:")]
-        // [Verify(StronglyTypedNSArray)]
+        //[[Verify(StronglyTypedNSArray)]
         [return: NullAllowed]
         NSObject[] LoadArrayForKey(string key);
 
@@ -443,7 +445,7 @@ namespace NearIT {
     }
 
     // [Static]
-    // [Verify(ConstantsInterfaceAssociation)]
+    // //[Verify(ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSTimeInterval NITConfigurationDefaultSchedulePeriod;
@@ -703,7 +705,7 @@ namespace NearIT {
     }
 
     // [Static]
-    // [Verify(ConstantsInterfaceAssociation)]
+    // //[Verify(ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const NITContentPluginName;
@@ -784,7 +786,7 @@ namespace NearIT {
     }
 
     // [Static]
-    // [Verify(ConstantsInterfaceAssociation)]
+    // //[Verify(ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull NITCouponPluginName;
@@ -815,7 +817,7 @@ namespace NearIT {
     }
 
     // [Static]
-    // [Verify(ConstantsInterfaceAssociation)]
+    //[Verify(ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const NITCustomJSONPluginName;
@@ -830,7 +832,7 @@ namespace NearIT {
     }
 
     // [Static]
-    // [Verify(ConstantsInterfaceAssociation)]
+    //[Verify(ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const NITCustomTriggerPluginName;
@@ -858,12 +860,12 @@ namespace NearIT {
     {
         // -(NSDate *)currentDate;
         [Export("currentDate")]
-        // //[Verify(MethodToProperty)]
+        //[Verify(MethodToProperty)]
         NSDate CurrentDate { get; }
 
         // -(NSTimeInterval)currentTimestamp;
         [Export("currentTimestamp")]
-        // //[Verify(MethodToProperty)]
+        //[Verify(MethodToProperty)]
         double CurrentTimestamp { get; }
     }
 
@@ -1037,7 +1039,7 @@ namespace NearIT {
     }
 
     // [Static]
-    // [Verify(ConstantsInterfaceAssociation)]
+    //[Verify(ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const _Nonnull NITFeedbackPluginName;
@@ -1664,7 +1666,7 @@ namespace NearIT {
 
         // -(NSArray * _Nonnull)parseToArrayOfObjects;
         [Export("parseToArrayOfObjects")]
-        // [Verify(MethodToProperty), Verify(StronglyTypedNSArray)]
+        //[Verify(MethodToProperty), Verify(StronglyTypedNSArray)]
         NSObject[] ParseToArrayOfObjects { get; }
 
         // -(NSArray<NITJSONAPIResource *> * _Nonnull)allResources;
@@ -1750,7 +1752,7 @@ namespace NearIT {
         NITJSONAPIResource ResourceObjectWithDictiornary(NSDictionary dictionary);
     }
 
-    //[Static]
+    // [Static]
     //[Verify(ConstantsInterfaceAssociation)]
     partial interface Constants
     {
@@ -1807,7 +1809,7 @@ namespace NearIT {
         NITNode[] NeighborsWithCoordinate(CLLocationCoordinate2D coordinate, [NullAllowed] NITNode container, nint maxChildren);
     }
 
-    //[Static]
+    // [Static]
     //[Verify(ConstantsInterfaceAssociation)]
     partial interface Constants
     {
@@ -1873,7 +1875,7 @@ namespace NearIT {
     // typedef void (^NITComputeNeighborBlock)(NSArray<NITNode *> * _Nullable);
     delegate void NITComputeNeighborBlock([NullAllowed] NITNode[] arg0);
 
-    //[Static]
+    // [Static]
     //[Verify(ConstantsInterfaceAssociation)]
     partial interface Constants
     {
@@ -2096,7 +2098,7 @@ namespace NearIT {
         void NodesWithCompletionHandler(Action<NSArray<NITNode>, NSError> completionHandler);
     }
 
-    //[Static]
+    // [Static]
     //[Verify(ConstantsInterfaceAssociation)]
     partial interface Constants
     {
@@ -2171,7 +2173,7 @@ namespace NearIT {
     }
 
     // [Static]
-    // [Verify(ConstantsInterfaceAssociation)]
+    //[Verify(ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSErrorDomain  _Nonnull const NITNotificationHistoryErrorDomain;
@@ -2232,8 +2234,8 @@ namespace NearIT {
     {
     }
 
-    //[Static]
-    // [Verify(ConstantsInterfaceAssociation)]
+    // [Static]
+    //[Verify(ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString * kNITReachabilityChangedNotification;
@@ -2262,7 +2264,7 @@ namespace NearIT {
 
         // -(BOOL)startNotifier;
         [Export("startNotifier")]
-        // ////////[Verify(MethodToProperty)]
+        //[Verify(MethodToProperty)]
         bool StartNotifier { get; }
 
         // -(void)stopNotifier;
@@ -2298,7 +2300,7 @@ namespace NearIT {
     }
 
     //[Static]
-    // [Verify(ConstantsInterfaceAssociation)]
+    //[Verify(ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern const NSTimeInterval NITReactionStateDefaultTime;
@@ -2814,7 +2816,7 @@ namespace NearIT {
     }
 
     //[Static]
-    //[Verify(ConstantsInterfaceAssociation)]
+    ////[Verify(ConstantsInterfaceAssociation)]
     partial interface Constants
     {
         // extern NSString *const NITSimpleNotificationPluginName;
@@ -3345,8 +3347,7 @@ namespace NearIT {
         double NearITSDKVersionNumber { get; }
 
         // extern const unsigned char [] NearITSDKVersionString;
-        // [Field("NearITSDKVersionString", "__Internal")]
-        // byte[] NearITSDKVersionString { get; }
+        //[Field("NearITSDKVersionString", "__Internal")]
+        //byte[] NearITSDKVersionString { get; }
     }
-
 }

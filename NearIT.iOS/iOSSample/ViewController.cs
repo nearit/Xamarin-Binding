@@ -16,14 +16,14 @@ namespace iOSSample
             base.ViewDidLoad();
             NITManager.DefaultManager.Start();
             // Perform any additional setup after loading the view, typically from a nib.
-            NITManager.DefaultManager.HistoryWithCompletion((arg1, arg2) => {
-                foreach (NITHistoryItem item in arg1){
+            NITManager.DefaultManager.HistoryWithCompletion((history, arg2) => {
+                foreach (NITHistoryItem item in history){
                     bool read = item.Read;
                 }
             });
 
-            NITManager.DefaultManager.CouponsWithCompletionHandler((arg1, arg2) => {
-                foreach (NITCoupon coupon in arg1) {
+            NITManager.DefaultManager.CouponsWithCompletionHandler((coupons, arg2) => {
+                foreach (NITCoupon coupon in coupons) {
                     string desc = coupon.Description;
                 }
             });
