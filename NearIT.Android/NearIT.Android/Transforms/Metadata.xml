@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    
+    <!-- This changes the return type of the 'getLocalContent' and 'parseFromPayload()' implementations in CoreReaction from T to ReactionBundle, so it matches with the interface. 
+    It is not a problem since CoreReaction is defined as such: CoreReaction<T extends ReactionBundle> -->
+    <attr path="/api/package[@name='it.near.sdk.reactions']/class[@name='CoreReaction']/method[@name='getLocalContent']" name="return">
+    it.near.sdk.recipes.models.ReactionBundle</attr>
+    <attr path="/api/package[@name='it.near.sdk.reactions']/class[@name='CoreReaction']/method[@name='parseFromPayload']" name="return">
+    it.near.sdk.recipes.models.ReactionBundle</attr>
+    
+    
+    <remove-node path="/api/package[@name='it.near.sdk.operation']/interface[@name='NearItUserDataAPI.UserDataSendListener']" />
+    <remove-node path="/api/package[@name='it.near.sdk.geopolis.radar.neighbors']/interface[@name='ResolverApi.NeighborSearchListener']" />
+    <remove-node path="/api/package[@name='it.near.sdk.geopolis.radar']/interface[@name='TreeChangeCalculator.TreeChangeListener']" />
+
+    <add-node path="/api/package[@name='it.near.sdk.geopolis.radar.events']">
+        <class abstract="true" deprecated="not deprecated" name="GeopolisEvent">
+        </class>
+    </add-node>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+</metadata>

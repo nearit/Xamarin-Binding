@@ -7,13 +7,17 @@ build/
 bld/
 [Bb]in/
 [Oo]bj/
+sharpieTest/
 
 # NuGet Packages Directory
 packages/
 
 # User-specific files
 *.userprefs
+*.UserPrefs.xml
 
 Keys.plist
 *secrets.xml
 *Keys.plist
+
+NearIT\.iOS/\.vs/NearIT\.iOS/xs/UserPrefs\.xml

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <add-node path="/api/package[@name='com.nearit.ui_bindings.coupon']">
+      <class abstract="false" deprecated="not deprecated" final="false" name="QRcodeGenerator" static="true" visibility="public" extends="java.lang.Object">
+      </class>
+    </add-node>
+
+    <add-node path="/api/package[@name='com.nearit.ui_bindings.utils']">
+      <class abstract="false" deprecated="not deprecated" final="false" name="LoadImageFromURL" static="true" visibility="public" extends="java.lang.Object">
+      </class>
+    </add-node>
+	<!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+</metadata>
