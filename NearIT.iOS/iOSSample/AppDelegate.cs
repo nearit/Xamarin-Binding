@@ -4,6 +4,7 @@ using NearIT;
 using UserNotifications;
 using System;
 using CoreLocation;
+using ObjCRuntime;
 
 namespace iOSSample
 {
