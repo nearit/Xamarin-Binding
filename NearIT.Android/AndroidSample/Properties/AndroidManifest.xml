@@ -1,17 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.nearit.nitbsample.AndroidSample">
-    <uses-sdk android:minSdkVersion="10" />
-    <application android:allowBackup="true" android:icon="@mipmap/icon" android:label="@string/app_name">
-        <meta-data android:name="near_api_key" android:value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI5MWMxYzViYzUxODU0ZjE0OGYzYWNiNmQ4YmE4NzU0ZiIsImlhdCI6MTUwNjQxODE2MCwiZXhwIjoxNjMyNzAwNzk5LCJkYXRhIjp7ImFjY291bnQiOnsiaWQiOiIxN2YxMjJiNi1iZjUwLTQ4ZGQtOWZiYi00OTVjMjc4OTZmMzkiLCJyb2xlX2tleSI6ImFwcCJ9fX0.b6AUrbcuwiPJNpY2f7gGH3Qi6s3ZTfCMALqTPwyjJxA" />
-        <activity
-          android:name="it.near.sdk.utils.device.NearTestEnrollActivity"
-          android:theme="@style/NearTestEnrollStyle">
-          <intent-filter>
-            <action android:name="android.intent.action.VIEW" />
-            <category android:name="android.intent.category.DEFAULT" />
-            <category android:name="android.intent.category.BROWSABLE" />
-            <data android:scheme="near17f122b6bf5048dd9fbb495c27896f39" />
-          </intent-filter>
-        </activity>
-    </application>
+	<uses-sdk android:minSdkVersion="10" />
+	<application android:allowBackup="true" android:icon="@mipmap/icon" android:label="@string/app_name">
+		<meta-data android:name="near_api_key" android:value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI5MWMxYzViYzUxODU0ZjE0OGYzYWNiNmQ4YmE4NzU0ZiIsImlhdCI6MTUwNjQxODE2MCwiZXhwIjoxNjMyNzAwNzk5LCJkYXRhIjp7ImFjY291bnQiOnsiaWQiOiIxN2YxMjJiNi1iZjUwLTQ4ZGQtOWZiYi00OTVjMjc4OTZmMzkiLCJyb2xlX2tleSI6ImFwcCJ9fX0.b6AUrbcuwiPJNpY2f7gGH3Qi6s3ZTfCMALqTPwyjJxA" />
+		<activity android:name="it.near.sdk.utils.device.NearTestEnrollActivity" android:theme="@style/NearTestEnrollStyle">
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="near17f122b6bf5048dd9fbb495c27896f39" />
+			</intent-filter>
+		</activity>
+	</application>
 </manifest>

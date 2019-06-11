@@ -1,32 +1,32 @@
 ﻿<Properties StartupConfiguration="{80C95C50-DB79-45C9-A7D3-872BD7CE4A2C}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AndroidSample/packages.config">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AndroidSample/MainActivity.cs">
     <Files>
-      <File FileName="AndroidSample/MainActivity.cs" Line="25" Column="1" />
-      <File FileName="AndroidSample/Properties/AndroidManifest.xml" Line="15" Column="20" />
-      <File FileName="AndroidSample/packages.config" Line="17" Column="56" />
-      <File FileName="NearIT.Android/packages.config" Line="1" Column="1" />
+      <File FileName="AndroidSample/MainActivity.cs" Line="30" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NearIT.Android" expanded="True">
-            <Node name="AndroidSample" expanded="True" />
+            <Node name="AndroidSample" expanded="True">
+              <Node name="MainActivity.cs" selected="True" />
+            </Node>
             <Node name="NearIT.Android" expanded="True">
               <Node name="References" expanded="True" />
-              <Node name="Packages" selected="True" />
+              <Node name="Packages" expanded="True" />
+              <Node name="Jars" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.NearBindingSample PreferredExecutionTarget="Android.Nexus_5_API_19" />
+  <MonoDevelop.Ide.ItemProperties.AndroidSample PreferredExecutionTarget="Android.Nexus_5X_API_26" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.NearIT.Android PreferredExecutionTarget="Android.Nexus_5_API_19" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.NearIT.Android PreferredExecutionTarget="Android.B2NGAA9832703731" />
-  <MonoDevelop.Ide.ItemProperties.AndroidSample PreferredExecutionTarget="Android.Nexus_5_API_19" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.NearBindingSample PreferredExecutionTarget="Android.Nexus_5_API_19" />
 </Properties>
