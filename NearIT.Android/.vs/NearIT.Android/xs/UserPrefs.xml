@@ -1,13 +1,15 @@
 ﻿<Properties StartupConfiguration="{80C95C50-DB79-45C9-A7D3-872BD7CE4A2C}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="README.md">
+    <Files>
+      <File FileName="README.md" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
+          <Node name="AltBeaconBinding" expanded="True" />
           <Node name="NearIT.Android" expanded="True">
-            <Node name="NearIT.Android" expanded="True">
-              <Node name="References" expanded="True" selected="True" />
-              <Node name="Packages" expanded="True" />
-              <Node name="Additions" expanded="True" />
+            <Node name="Solution Items" expanded="True">
+              <Node name="/Users/cattaneostefano/development/Xamarin-Binding/NearIT.Android/README.md" selected="True" />
             </Node>
           </Node>
         </State>
@@ -15,7 +17,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.NearBindingSample PreferredExecutionTarget="Android.Nexus_5_API_19" />
-  <MonoDevelop.Ide.ItemProperties.AndroidSample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Nexus_5X_API_26" />
+  <MonoDevelop.Ide.ItemProperties.AndroidSample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.73QDU16914013197" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.NearIT.Android PreferredExecutionTarget="Android.Nexus_5_API_19" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
