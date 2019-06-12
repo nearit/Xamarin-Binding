@@ -8,6 +8,7 @@
     <attr path="/api/package[@name='it.near.sdk.reactions']/class[@name='CoreReaction']/method[@name='parseFromPayload']" name="return">
     it.near.sdk.recipes.models.ReactionBundle</attr>
     
+    <remove-node path="/api/package[@name='it.near.sdk.utils']/class[@name='JobIntentService']" />
     
     <remove-node path="/api/package[@name='it.near.sdk.operation']/interface[@name='NearItUserDataAPI.UserDataSendListener']" />
     <remove-node path="/api/package[@name='it.near.sdk.geopolis.radar.neighbors']/interface[@name='ResolverApi.NeighborSearchListener']" />

@@ -1,6 +1,10 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using IT.Near.Sdk;
+using System.Collections.Generic;
+using Java.Util;
+using Java.Lang;
 
 namespace AndroidSample
 {
@@ -21,8 +25,6 @@ namespace AndroidSample
             Button button = FindViewById<Button>(Resource.Id.myButton);
 
             button.Click += delegate { button.Text = $"{count++} clicks!"; };
-
-
         }
     }
 }
