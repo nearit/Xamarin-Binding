@@ -21,3 +21,5 @@ Keys.plist
 *Keys.plist
 
 NearIT\.iOS/\.vs/NearIT\.iOS/xs/UserPrefs\.xml
+
+NearIT\.Android/AndroidSample/google-services\.json

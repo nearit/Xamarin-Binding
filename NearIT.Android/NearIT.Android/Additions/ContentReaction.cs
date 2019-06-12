@@ -1,4 +1,4 @@
-﻿namespace IT.Near.Sdk.Reactions.Contentplugin
+namespace IT.Near.Sdk.Reactions.Contentplugin
 {
 
     // Metadata.xml XPath class reference: path="/api/package[@name='it.near.sdk.reactions.contentplugin']/class[@name='ContentReaction']"

@@ -1,19 +1,15 @@
 ﻿<Properties StartupConfiguration="{80C95C50-DB79-45C9-A7D3-872BD7CE4A2C}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="AndroidSample/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="README.md">
     <Files>
-      <File FileName="AndroidSample/MainActivity.cs" Line="30" Column="1" />
+      <File FileName="README.md" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
+          <Node name="AltBeaconBinding" expanded="True" />
           <Node name="NearIT.Android" expanded="True">
-            <Node name="AndroidSample" expanded="True">
-              <Node name="MainActivity.cs" selected="True" />
-            </Node>
-            <Node name="NearIT.Android" expanded="True">
-              <Node name="References" expanded="True" />
-              <Node name="Packages" expanded="True" />
-              <Node name="Jars" expanded="True" />
+            <Node name="Solution Items" expanded="True">
+              <Node name="/Users/cattaneostefano/development/Xamarin-Binding/NearIT.Android/README.md" selected="True" />
             </Node>
           </Node>
         </State>
@@ -21,12 +17,17 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.NearBindingSample PreferredExecutionTarget="Android.Nexus_5_API_19" />
-  <MonoDevelop.Ide.ItemProperties.AndroidSample PreferredExecutionTarget="Android.Nexus_5X_API_26" />
+  <MonoDevelop.Ide.ItemProperties.AndroidSample AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.73QDU16914013197" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.NearIT.Android PreferredExecutionTarget="Android.Nexus_5_API_19" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/cattaneostefano/development/Xamarin-Orpheus_Binding/Xamarin-Orpeus-Bindings/orpheusSample/MainActivity.cs" line="26" column="1" />
+      <Breakpoint file="/Users/cattaneostefano/development/Xamarin-Orpheus_Binding/Xamarin-Orpeus-Bindings/orpheusSample/MainActivity.cs" line="25" column="1" />
+      <Breakpoint file="/Users/cattaneostefano/development/Xamarin-Orpheus_Binding/Xamarin-Orpeus-Bindings/orpheusSample/SampleModel.cs" line="16" column="1" />
+      <Breakpoint file="/Users/cattaneostefano/development/Xamarin-Orpheus_Binding/Xamarin-Orpeus-Bindings/orpheusSample/SampleModel.cs" line="17" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
