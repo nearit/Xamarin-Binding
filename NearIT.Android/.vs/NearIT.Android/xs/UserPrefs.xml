@@ -1,22 +1,13 @@
 ﻿<Properties StartupConfiguration="{80C95C50-DB79-45C9-A7D3-872BD7CE4A2C}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="NearIT.Android/Additions/ContentReaction.cs">
-    <Files>
-      <File FileName="NearIT.Android/packages.config" Line="1" Column="1" />
-      <File FileName="NearIT.Android/Transforms/Metadata.xml" Line="11" Column="99" />
-      <File FileName="AndroidSample/MainActivity.cs" Line="31" Column="78" />
-      <File FileName="NearIT.Android/Additions/ContentReaction.cs" Line="7" Column="6" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="NearIT.Android" expanded="True">
-            <Node name="AndroidSample" expanded="True" />
             <Node name="NearIT.Android" expanded="True">
-              <Node name="Additions" expanded="True">
-                <Node name="ContentReaction.cs" selected="True" />
-              </Node>
-              <Node name="Jars" expanded="True" />
-              <Node name="Properties" expanded="True" />
+              <Node name="References" expanded="True" selected="True" />
+              <Node name="Packages" expanded="True" />
+              <Node name="Additions" expanded="True" />
             </Node>
           </Node>
         </State>

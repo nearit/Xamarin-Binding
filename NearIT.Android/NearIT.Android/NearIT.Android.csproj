@@ -77,9 +77,6 @@
     <Reference Include="Xamarin.Android.Support.v7.AppCompat">
       <HintPath>..\packages\Xamarin.Android.Support.v7.AppCompat.26.1.0.1\lib\MonoAndroid80\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
     </Reference>
-    <Reference Include="AltBeaconBinding">
-      <HintPath>..\..\..\AltBeaconBinding\AltBeaconBinding\bin\Debug\AltBeaconBinding.dll</HintPath>
-    </Reference>
     <Reference Include="GoogleServices">
       <HintPath>..\..\..\GoogleServicesBinding\GoogleServicesBinding\bin\Debug\GoogleServices.dll</HintPath>
     </Reference>
@@ -89,6 +86,9 @@
     <Reference Include="Java.Interop" />
     <Reference Include="OrpheusBindings">
       <HintPath>..\..\..\Xamarin-Orpheus-Bindings\OrpheusBindings\bin\Release\OrpheusBindings.dll</HintPath>
+    </Reference>
+    <Reference Include="AltBeaconBinding">
+      <HintPath>..\..\..\AltBeaconBinding\AltBeaconBinding\bin\Release\AltBeaconBinding.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
