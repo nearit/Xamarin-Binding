@@ -6,8 +6,20 @@ To generate the initial `ApiDefinitions.cs` and `Structs.cs` files, run `sharpie
 As of the 23rd of Oct 2018, the only way to use sharpie found to be working, is to run it neither on the `.a` nor the `.framework` of the library, but on the source code itself (sigh).
 The commad that got us bootstrapped in sharpie is:
 ```bash
-sharpie bind -namespace NearIT ~/YOUR-DEV-PATH/ios-sdk/NearITSDK/*.h -sdk iphoneos12.0 -scope ~/YOUR-DEV-PATH/ios-sdk/NearITSDK
+sharpie bind -namespace NearIT ~/YOUR-DEV-PATH/ios-sdk/NearITSDK/*.h -sdk iphoneos12.2 -scope ~/YOUR-DEV-PATH/ios-sdk/NearITSDK
 ```
+### Sharpie generation error:
+
+```
+Unhandled Exception:
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> Sharpie.Tooling.Tool+ExitException: Exception of type 'Sharpie.Tooling.Tool+ExitException' was thrown.
+  at Sharpie.ParseTool+ParseOptionSection.SetTargetSdk (System.String sdkIdentifier) [0x0004a] in /Users/builder/vsts/_work/2/s/Sharpie/ParseTool.cs:55 
+```
+Make sure to use the latest installed ios sdk version in the command at "iphoneosXX.X"
+
+## Info and other approaches
+
+https://debruyn.dev/2016/creating-a-xamarin.ios-binding-project-for-dummies/
 
 ## Fixing automatic binding errors
 
@@ -23,7 +35,7 @@ Looking at the Xamarin-SDK repository `ApiDefinition.cs` and `Structs.cs` you ca
 to the definition of that object in the `ApiDefinitions.cs`.
 
 - Some classes implementing protocols will appear to implement a version of the protocol that starts with **I** like **INITValidating**, this can be edited to **NITValidating**
-- Some methods with `{ get; }` will complain, they might be fixed with `()` instead of `{ get; }` (usually stuff in `NSData_NSDataZip`)
+- Some methods with `{ get; }` will complain, they might be fixed with `()` instead of `{ get; }` (usually stuff in `NSData_NSDataZip`) (ATTENTION: not fixing this will cause build errors in other files).
 - This line
 ```c#
 unsafe Reachability ReachabilityWithAddress (sockaddr* hostAddress);
@@ -35,3 +47,5 @@ can be commented out
 byte[] NearITSDKVersionString { get; }
 ```
 can be commented out
+- `[Verify (PlatformInvoke)]` can be commented out
+- enum extending from nint => make them extend long
