@@ -1,4 +1,4 @@
-
+﻿
 ## How to bind
 
 To bind an Obj-C library (or framework), it should be included in a iOS binding project, with a valid mapping of its methods in the `ApiDefinition.cs` and `Structs.cs` files and the project should be built.
@@ -11,7 +11,7 @@ sharpie bind -namespace NearIT ~/YOUR-DEV-PATH/ios-sdk/NearITSDK/*.h -sdk iphone
 
 ### What worked the last time we did it:
 
-Since the project changes in the iOS SDK in 2.12.1 the sharpie binding directly from cocoapods seems too work (and is much better, since we bind only the public API).
+Since the project changes in the iOS SDK in 2.12.1, the sharpie binding directly from cocoapods seems too work (and is much better, since we bind only the public API).
 In an empty folder run
 ```
 sharpie pod init ios NearITSDK
