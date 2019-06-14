@@ -1,10 +1,10 @@
 ﻿using Foundation;
 using UIKit;
-using NearIT;
 using UserNotifications;
 using System;
 using CoreLocation;
 using ObjCRuntime;
+using NearIT;
 
 namespace iOSSample
 {
@@ -26,9 +26,7 @@ namespace iOSSample
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
 
-            string a = "f";
-
-            NITManager.SetupWithApiKey("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI5MWMxYzViYzUxODU0ZjE0OGYzYWNiNmQ4YmE4NzU0ZiIsImlhdCI6MTUwNjQxODE2MCwiZXhwIjoxNjMyNzAwNzk5LCJkYXRhIjp7ImFjY291bnQiOnsiaWQiOiIxN2YxMjJiNi1iZjUwLTQ4ZGQtOWZiYi00OTVjMjc4OTZmMzkiLCJyb2xlX2tleSI6ImFwcCJ9fX0.b6AUrbcuwiPJNpY2f7gGH3Qi6s3ZTfCMALqTPwyjJxA");
+            NITManager.SetupWithApiKey("YOUR-API-KEY");
             NITManager.SetFrameworkName("xamarin");
             NITManager d = NITManager.DefaultManager;
 
