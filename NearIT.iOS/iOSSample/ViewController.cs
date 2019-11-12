@@ -17,13 +17,16 @@ namespace iOSSample
             NITManager.DefaultManager.Start();
             // Perform any additional setup after loading the view, typically from a nib.
             NITManager.DefaultManager.HistoryWithCompletion((history, arg2) => {
+                if (history == null) return;
                 foreach (NITHistoryItem item in history){
                     bool read = item.Read;
                 }
             });
 
-            NITManager.DefaultManager.CouponsWithCompletionHandler((coupons, arg2) => {
-                foreach (NITCoupon coupon in coupons) {
+            NITManager.DefaultManager.CouponsWithCompletionHandler((coupons, arg2) =>
+            {
+                foreach (NITCoupon coupon in coupons)
+                {
                     string desc = coupon.Description;
                 }
             });
